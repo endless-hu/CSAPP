@@ -16,7 +16,7 @@ void test_free(void *p);
 size_t allocation_check();
 
 /* Probability of malloc failing, expressed as percent */
-int fail_probability;
+
 
 /*
   Set/unset cautious mode.

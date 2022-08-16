@@ -37,6 +37,8 @@ queue_t *q = NULL;
 /* Number of elements in queue */
 size_t qcnt = 0;
 
+extern int fail_probability;
+
 /* How many times can queue operations fail */
 int fail_limit = BIG_QUEUE;
 int fail_count = 0;

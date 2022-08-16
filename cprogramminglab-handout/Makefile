@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -O0 -g -Wall -Werror
+CFLAGS = -O0 -g -Wall
 
 all: qtest
 	-tar -cf handin.tar queue.c queue.h
