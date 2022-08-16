@@ -1,0 +1,22 @@
+name: C Programming Lab Test
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Up Environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-multilib make
+
+      - name: Setup Python
+        uses: actions/setup-python@v4.2.0
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Do Tests
+        run: |
+          cd cprogramminglab-handout/
+          make test
